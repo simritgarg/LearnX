@@ -169,7 +169,7 @@ export const addUserRating = async (req, res) => {
 
     // Validate inputs
     if (!courseId || !userId || !rating || rating < 1 || rating > 5) {
-        return res.json({ success: false, message: 'InValid Details' });
+        return res.json({ success: false, message: 'Invalid Details' });
     }
 
     try {
